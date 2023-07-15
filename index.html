@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <!-- Icon CDN -->
+    <script src="https://kit.fontawesome.com/c83e9ead2b.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-header">
+            <input type="search" name="input-box" id="input-box" placeholder="Enter the city name">
+            <button class="fa-solid fa-magnifying-glass" id="search-button"></button>
+        </div>
+        <div class="not-found">
+            <img id="not-found-img" src="./images/error.png" alt="Not found">
+            <h2>
+                Error!! Kindly try again
+            </h2>
+        </div>
+        <div class="weather-body">
+            <div class="temperature-box">
+                <img src="./weather/64x64/day/113.png" alt="Weather Image" class="weather-image">
+                <div class="temperature-details">
+                    <p class="location"></p>
+                    <p class="temperature"></p>
+                    <p class="description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="row">
+                <div class="details-text">
+                    <i class="fa-solid fa-droplet fa-2xl"></i>
+                    <div class="text">
+                        <p class="text-heading">Humidity</p>
+                        <p id="humidity"></p>
+                    </div>
+                </div>
+                <div class="details-text">
+                    <i class="fa-solid fa-wind fa-2xl"></i>
+                    <div class="text">
+                        <p class="text-heading">Wind</p>
+                        <p id="wind"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="details-text">
+                    <i class="fa-solid fa-head-side-mask fa-2xl"></i>
+                    <div class="text">
+                        <p class="text-heading">AQI</p>
+                        <p id="aqi"></p>
+                    </div>
+                </div>
+                <div class="details-text">
+                    <i class="fa-solid fa-cloud fa-2xl"></i>
+                    <div class="text">
+                        <p class="text-heading">Clouds</p>
+                        <p id="clouds"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

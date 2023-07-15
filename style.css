@@ -1,0 +1,99 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* ELEMENT SELECTORS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    border-radius: 16px;
+    height: 2.2rem;
+    width: 70%;
+}
+
+button {
+    border: none;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 16px;
+}
+
+
+
+/* SPECIFIC SELECTORS */
+
+#input-box::placeholder{
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+
+.container {
+    text-align: center;
+    width: 30vw;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(0, 212, 255, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.weather-image {
+    width: 40%;
+}
+
+.temperature-box {
+    display: none;
+    justify-content: center;
+}
+
+.temperature-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.weather-details {
+    display: none;
+    justify-content: space-around;
+}
+
+.details-text {
+    margin: 30px;
+}
+
+.text {
+    margin: 10px;
+}
+
+.text-heading {
+    font-weight: 700;
+}
+
+#not-found-img {
+    width: 30%;
+}
+
+.not-found {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
